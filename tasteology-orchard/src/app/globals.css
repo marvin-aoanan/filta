@@ -1,26 +1,115 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300;400;500;700&display=swap');
+
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0e1414;
+  --foreground: #ffffff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+.w-max {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.Tasteology {
+  max-width: 1440px;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0;
+  background-color: var(--background);
+}
+.BlockImage-Text {
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 120px 147px;
+}
+
+.Headline {
+  height: 96px;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 30px;
+  border-bottom: solid 1px #fff;
+}
+
+.Images {
+  width: 754px;
+  height: 600px;
+  flex-grow: 0;
+}
+.Left {
+  width: 372px;
+  height: 600px;
+  flex-grow: 0;
+  margin: 0 10px 0 0;
+}
+.Right-Top {
+  width: 372px;
+  height: 295px;
+  flex-grow: 0;
+  margin: 0 0 10px 10px;
+}
+.Right-Bottom {
+  width: 372px;
+  height: 295px;
+  flex-grow: 0;
+  margin: 10px 0 0 10px;
+}
+
+.Content {
+  height: 577px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 30px;
+  padding: 0;
+}
+.WHAT-DOES-COOKING-MEAN {
+  height: 66px;
+  flex-grow: 1;
+  font-family: OpenSans;
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: 1.5px;
+  text-align: left;
+  color: #fff;
+}
+.THE-PERFECT-EGG {
+  width: 362px;
+  height: 21px;
+  flex-grow: 0;
+  font-family: OpenSans;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cf1430;
 }
