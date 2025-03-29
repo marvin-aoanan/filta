@@ -22,7 +22,7 @@ p {
   font-weight: 300;
   font-size: 21px;
   line-height: 1.43;
-  color: #fff;
+  color: var(--foreground);
   margin: 0;
   padding: 0;
 }
@@ -56,15 +56,17 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
-  padding: 120px 147px;
+  padding: 120px 10px;
+  max-width: 1146px;
+  margin: 0 auto;
 }
 
 .Headline {
   margin: 0 auto;
   padding: 0 0 30px;
-  border-bottom: solid 1px #fff;
+  border-bottom: solid 1px var(--foreground);;
 }
 
 .Images {
@@ -110,7 +112,7 @@ p {
   letter-spacing: 1.5px;
   text-align: left;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--foreground);
   margin: 0;
 }
 
@@ -143,6 +145,14 @@ p {
 }
 .Card-text h3 {
   font-weight: 700;
+}
+
+/* Responsive */
+@media (min-width: 1025px) and (max-width: 1150px) {
+  .topComp.BlockImage-Text {
+    flex-direction: column;
+    padding: calc(120px / 2) 10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -182,6 +192,7 @@ p {
     align-items: center;
   }
 }
+
 @media (min-width: 320px) and (max-width: 450px) { 
   .Tasteology {
     overflow: hidden;
