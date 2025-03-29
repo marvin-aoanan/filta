@@ -127,6 +127,7 @@ p {
 
 .bottomComp.BlockImage-Text {
   flex-direction: column;
+  padding: 120px 0;
 }
 
 .Card-list {
