@@ -10,9 +10,10 @@ export default function TopComponent() {
     <div className="topComp BlockImage-Text">
       <div className="Images">
         <div className="Left">
-        <Link href={`/1`}>
+        <Link href={`/photo-feed/1`}>
           <Image
             id="left-image"
+            data-name="Cooking"
             src="/image-left.png"
             alt="Left image"
             width={372}
@@ -27,6 +28,7 @@ export default function TopComponent() {
           <Link href={`/photo-feed/2`}>
             <Image
               id="righ-top-image"
+              data-name="Recipe"
               src="/image-right-top.png"
               alt="Right top image"
               width={372}
@@ -40,6 +42,7 @@ export default function TopComponent() {
           <Link href={`/photo-feed/3`}>
             <Image
               id="right-bottom-image"
+              data-name="Tray of eggs"
               src="/image-right-bottom.png"
               alt="Right bottom image"
               width={372}

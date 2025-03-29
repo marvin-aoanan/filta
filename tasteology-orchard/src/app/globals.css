@@ -18,6 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
 p {
   font-weight: 300;
   font-size: 21px;
@@ -26,9 +27,11 @@ p {
   margin: 0;
   padding: 0;
 }
+
 .font-bold {
   font-weight: 700;
 }
+
 .text-red {
   color: #cf1430;
 }
@@ -41,6 +44,7 @@ p {
 }
 
 .Tasteology {
+  width: 100%;
   max-width: 1440px;
   flex-grow: 0;
   display: flex;
@@ -50,6 +54,7 @@ p {
   padding: 0;
   background-color: var(--background);
 }
+
 .BlockImage-Text {
   align-self: stretch;
   flex-grow: 0;
@@ -75,18 +80,21 @@ p {
   flex-grow: 0;
   display: flex;
 }
+
 .Left {
   width: 372px;
   height: 600px;
   flex-grow: 0;
   margin: 0;
 }
+
 .Right-Top {
   width: 372px;
   height: 295px;
   flex-grow: 0;
   margin: 0 0 10px 10px;
 }
+
 .Right-Bottom {
   width: 372px;
   height: 295px;
@@ -103,6 +111,7 @@ p {
   gap: 30px;
   padding: 0;
 }
+
 .Heading {
   font-size: 30px;
   font-weight: 300;
@@ -119,6 +128,7 @@ p {
 .bottomComp.BlockImage-Text {
   flex-direction: column;
 }
+
 .Card-list {
   display: flex;
   gap: 10px;
@@ -126,6 +136,7 @@ p {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 .Card {
   width: 375px;
   padding: 0;
@@ -137,12 +148,14 @@ p {
   text-align: center;
   gap: 30px;
 }
+
 .Card-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 0 30px;
 }
+
 .Card-text h3 {
   font-weight: 700;
 }
@@ -153,6 +166,7 @@ p {
     flex-direction: column;
     padding: calc(120px / 2) 10px;
   }
+  
 }
 
 @media (max-width: 1024px) {

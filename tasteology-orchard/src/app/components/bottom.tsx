@@ -18,6 +18,7 @@ export default function BottomComponent() {
           <Link href={`/photo-feed/4`}>
           <Image
             id="red-food"
+            data-name="Red food"
             src="/red-food.png"
             alt="Red food"
             width={375}
@@ -36,6 +37,7 @@ export default function BottomComponent() {
           <Link href={`/photo-feed/5`}>
             <Image
               id="green-food"
+              data-name="Green food"
               src="/green-food.png"
               alt="Green food"
               width={375}
@@ -54,6 +56,7 @@ export default function BottomComponent() {
           <Link href={`/photo-feed/6`}>
           <Image
             id="white-food"
+            data-name="White food"
             src="/white-food.png"
             alt="White food"
             width={375}
