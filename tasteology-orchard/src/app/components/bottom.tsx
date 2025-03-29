@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { handleClick } from "./actions/handle-click";
 import { Card } from "./card";
 import Image from "next/image";
@@ -14,15 +15,16 @@ export default function BottomComponent() {
       <div className="Card-list">
         <Card>
           <div className="Card-image">
+          <Link href={`/photo-feed/4`}>
           <Image
             id="red-food"
             src="/red-food.png"
             alt="Red food"
             width={375}
             height={300}
-            priority
             onClick={handleClick}
           />
+          </Link>
           </div>
           <div className="Card-text">
             <h3>Red</h3>
@@ -31,15 +33,16 @@ export default function BottomComponent() {
         </Card>
         <Card>
           <div className="Card-image">
-          <Image
-            id="green-food"
-            src="/green-food.png"
-            alt="Green food"
-            width={375}
-            height={300}
-            priority
-            onClick={handleClick}
-          />
+          <Link href={`/photo-feed/5`}>
+            <Image
+              id="green-food"
+              src="/green-food.png"
+              alt="Green food"
+              width={375}
+              height={300}
+              onClick={handleClick}
+            />
+          </Link>
           </div>
           <div className="Card-text">
             <h3>Green</h3>
@@ -48,15 +51,16 @@ export default function BottomComponent() {
         </Card>
         <Card>
           <div className="Card-image">
+          <Link href={`/photo-feed/6`}>
           <Image
             id="white-food"
             src="/white-food.png"
             alt="White food"
             width={375}
             height={300}
-            priority
             onClick={handleClick}
           />
+          </Link>
           </div>
           <div className="Card-text">
             <h3>White</h3>

@@ -2,12 +2,15 @@
 
 import Image from "next/image";
 import { handleClick } from "./actions/handle-click";
+import Link from "next/link";
+
 
 export default function TopComponent() {
   return (
     <div className="topComp BlockImage-Text">
       <div className="Images">
         <div className="Left">
+        <Link href={`/1`}>
           <Image
             id="left-image"
             src="/image-left.png"
@@ -17,29 +20,34 @@ export default function TopComponent() {
             priority
             onClick={handleClick}
           />
+        </Link>
         </div>
         <div className="Right">
         <div className="Right-Top">
-          <Image
-            id="righ-top-image"
-            src="/image-right-top.png"
-            alt="Right top image"
-            width={372}
-            height={295}
-            priority
-            onClick={handleClick}
-          />
+          <Link href={`/photo-feed/2`}>
+            <Image
+              id="righ-top-image"
+              src="/image-right-top.png"
+              alt="Right top image"
+              width={372}
+              height={295}
+              priority
+              onClick={handleClick}
+            />
+          </Link>
         </div>
         <div className="Right-Bottom">
-          <Image
-            id="right-bottom-image"
-            src="/image-right-bottom.png"
-            alt="Right bottom image"
-            width={372}
-            height={295}
-            priority
-            onClick={handleClick}
-          />
+          <Link href={`/photo-feed/3`}>
+            <Image
+              id="right-bottom-image"
+              src="/image-right-bottom.png"
+              alt="Right bottom image"
+              width={372}
+              height={295}
+              priority
+              onClick={handleClick}
+            />
+          </Link>
         </div>
 
         </div>

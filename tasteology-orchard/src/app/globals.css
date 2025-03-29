@@ -170,7 +170,7 @@ p {
 
 @media (max-width: 768px) {
   .BlockImage-Text {
-    padding: calc(120px / 2) 2rem;
+    padding: calc(120px / 2) 10px;
     flex-direction: column;
     max-width: 600px;
     align-items: center;
@@ -180,8 +180,8 @@ p {
 @media (min-width: 320px) and (max-width: 767px) {
   .BlockImage-Text {
     flex-direction: column;
-    padding: 2rem;
-    max-width: 300px;
+    padding: 2rem 10px;;
+    max-width: 280px;
     margin: 0 auto;
   }
   .Images, .Left, .Right, .Right-Top, .Right-Bottom {

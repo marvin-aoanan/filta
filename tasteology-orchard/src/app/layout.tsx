@@ -12,7 +12,12 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Filta - Tasteology Orchard",
-  description: "Tasteology Orchard, taste the colors",
+  description: "Tasteology Orchard, taste the colors.",
+  openGraph: {
+    title: 'Filta - Tasteology Orchard',
+    description: 'Tasteology Orchard, taste the colors.',
+  },
+  
 };
 
 export default function RootLayout({
