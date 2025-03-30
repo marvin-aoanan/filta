@@ -1,5 +1,5 @@
 import Image from "next/image";
-import photoImages, { PhotoImage } from "../../photos";
+import photosImages, { PhotoImage } from "../../photos";
 import Modal from "@/app/components/modal";
 
 export default async function PhotoModal({
@@ -8,8 +8,7 @@ export default async function PhotoModal({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const photo: PhotoImage = photoImages.find((p) => p.id === id)!;
-
+  const photo: PhotoImage = photosImages.find((p) => p.id === id)!;
   return (
     <Modal>
       <Image

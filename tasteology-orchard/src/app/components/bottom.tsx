@@ -15,7 +15,7 @@ export default function BottomComponent() {
       <div className="Card-list">
         <Card>
           <div className="Card-image">
-          <Link href={`/photo-feed/4`}>
+          <Link href={`/red`} id="red" onClick={handleClick}>
           <Image
             id="red-food"
             data-name="Red food"
@@ -23,7 +23,6 @@ export default function BottomComponent() {
             alt="Red food"
             width={375}
             height={300}
-            onClick={handleClick}
           />
           </Link>
           </div>
@@ -34,7 +33,7 @@ export default function BottomComponent() {
         </Card>
         <Card>
           <div className="Card-image">
-          <Link href={`/photo-feed/5`}>
+          <Link href={`/green`} id="green" onClick={handleClick}>
             <Image
               id="green-food"
               data-name="Green food"
@@ -42,7 +41,6 @@ export default function BottomComponent() {
               alt="Green food"
               width={375}
               height={300}
-              onClick={handleClick}
             />
           </Link>
           </div>
@@ -53,7 +51,7 @@ export default function BottomComponent() {
         </Card>
         <Card>
           <div className="Card-image">
-          <Link href={`/photo-feed/6`}>
+          <Link href={`/white`} id="white" onClick={handleClick}>
           <Image
             id="white-food"
             data-name="White food"
@@ -61,7 +59,6 @@ export default function BottomComponent() {
             alt="White food"
             width={375}
             height={300}
-            onClick={handleClick}
           />
           </Link>
           </div>

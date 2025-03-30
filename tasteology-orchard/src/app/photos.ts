@@ -1,10 +1,10 @@
 import { StaticImageData } from "next/image";
-import imageLeft from "./photos/image-left.png";
-import imageRightBottom from "./photos/image-right-bottom.png";
-import imageRightTop from "./photos/image-right-top.png";
-import redFood from "./photos/red-food.png";
-import greenFood from "./photos/green-food.png";
-import whiteFood from "./photos/white-food.png";
+import cooking from "./images/photo-cooking.png";
+import recipe from "./images/photo-recipe.png";
+import eggs from "./images/photo-eggs.png";
+import redFood from "./images/photo-red-food.png";
+import greenFood from "./images/photo-green-food.png";
+import whiteFood from "./images/photo-white-food.png";
 
 
 export type PhotoImage = {
@@ -16,37 +16,37 @@ export type PhotoImage = {
 
 const photoImages: PhotoImage[] = [
   {
-    id: "1",
+    id: "cooking",
     name: "Cooking",
-    src: imageLeft,
+    src: cooking,
     desc: "Is it simply applying heat to a food product?",
   },
   {
-    id: "2",
+    id: "recipe",
     name: "Recipe",
-    src: imageRightTop,
+    src: recipe,
     desc: "A way of making certain food safe to eat?",
   },
   {
-    id: "3",
+    id: "eggs",
     name: "Tray of Eggs",
-    src: imageRightBottom,
+    src: eggs,
     desc: "Or a way to create flavour and make food more appealing?",
   },
   {
-    id: "4",
+    id: "red",
     name: "Red Food",
     src: redFood,
     desc: "Red foods remind us of berries and soft fruits, so we anticipate a sweet taste.",
   },
   {
-    id: "5",
+    id: "green",
     name: "Green Food",
     src: greenFood,
     desc: "Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours.",
   },
   {
-    id: "6",
+    id: "white",
     name: "White Food",
     src: whiteFood,
     desc: "White foods evoke memories of salt and salty flavours, driving the expectation of a savoury treat.",

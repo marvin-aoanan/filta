@@ -10,7 +10,7 @@ export default function TopComponent() {
     <div className="topComp BlockImage-Text">
       <div className="Images">
         <div className="Left">
-        <Link href={`/photo-feed/1`}>
+        <Link href={`/cooking`} id="cooking" onClick={handleClick}>
           <Image
             id="left-image"
             data-name="Cooking"
@@ -19,42 +19,37 @@ export default function TopComponent() {
             width={372}
             height={600}
             priority
-            onClick={handleClick}
           />
         </Link>
         </div>
         <div className="Right">
-        <div className="Right-Top">
-          <Link href={`/photo-feed/2`}>
-            <Image
-              id="righ-top-image"
-              data-name="Recipe"
-              src="/image-right-top.png"
-              alt="Right top image"
-              width={372}
-              height={295}
-              priority
-              onClick={handleClick}
-            />
-          </Link>
+          <div className="Right-Top">
+            <Link href={`/recipe`} id="recipe" onClick={handleClick}>
+              <Image
+                id="righ-top-image"
+                data-name="Recipe"
+                src="/image-right-top.png"
+                alt="Right top image"
+                width={372}
+                height={295}
+                priority
+              />
+            </Link>
+          </div>
+          <div className="Right-Bottom">
+            <Link href={`/eggs`} id="eggs" onClick={handleClick}>
+              <Image
+                id="right-bottom-image"
+                data-name="Tray of eggs"
+                src="/image-right-bottom.png"
+                alt="Right bottom image"
+                width={372}
+                height={295}
+                priority
+              />
+            </Link>
+          </div>
         </div>
-        <div className="Right-Bottom">
-          <Link href={`/photo-feed/3`}>
-            <Image
-              id="right-bottom-image"
-              data-name="Tray of eggs"
-              src="/image-right-bottom.png"
-              alt="Right bottom image"
-              width={372}
-              height={295}
-              priority
-              onClick={handleClick}
-            />
-          </Link>
-        </div>
-
-        </div>
-       
       </div>
       <div className="Content">
         <div className="Headline">

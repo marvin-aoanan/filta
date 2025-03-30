@@ -22,13 +22,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+  modal,
+}: {
+  children: React.ReactNode
+  modal: React.ReactNode
+}) {
   return (
     <html lang="en" className={openSans.className}>
       <body>
-        {children}
+      {children}
+      {modal}
       </body>
     </html>
   );
