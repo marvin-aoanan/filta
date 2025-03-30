@@ -20,8 +20,8 @@ export default async function PhotoPage({
           className="w-full object-cover aspect-square "
         />
 
-        <div className="bg-white py-4">
-          <h3>{photo.desc}</h3>
+        <div className="bg-white p-4">
+          <h3 className="text-gray-900">{photo.desc}</h3>
         </div>
       </div>
     </div>

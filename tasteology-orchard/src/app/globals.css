@@ -52,9 +52,10 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
   padding: 0;
   background-color: var(--background);
+  overflow: hidden;
 }
 
 .BlockImage-Text {
@@ -63,9 +64,9 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  gap: 30px;
-  padding: 120px 10px;
+  align-items: flex-start;
+  column-gap: 30px;
+  padding: 120px 0;
   max-width: 1146px;
   margin: 0 auto;
 }
@@ -129,6 +130,7 @@ p {
 
 .bottomComp.BlockImage-Text {
   flex-direction: column;
+  gap: 30px;
   padding: 120px 0;
 }
 
@@ -167,14 +169,22 @@ p {
 @media (min-width: 1025px) and (max-width: 1150px) {
   .topComp.BlockImage-Text {
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
     padding: calc(120px / 2) 10px;
+  }
+  .Content {
+    max-width: 754px;
+    margin: 0 auto;
   }
   
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .BlockImage-Text {
     flex-direction: column;
+    align-items: center;
+    gap: 30px;
     padding: calc(120px / 2) 3rem;
     max-width: 754px;
     margin: 0 auto;
@@ -185,22 +195,16 @@ p {
   }
 }
 
-@media (max-width: 768px) {
-  .BlockImage-Text {
-    padding: calc(120px / 2) 10px;
+@media (min-width: 451px) and (max-width: 767px) {
+  .BlockImage-Text, 
+  .bottomComp.BlockImage-Text {
     flex-direction: column;
-    max-width: 600px;
-    align-items: center;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 767px) {
-  .BlockImage-Text {
-    flex-direction: column;
-    padding: 2rem 10px;;
-    max-width: 280px;
+    gap: 30px;
+    padding: calc(120px / 2) 0;
+    max-width: 400px;
     margin: 0 auto;
   }
+
   .Images, .Left, .Right, .Right-Top, .Right-Bottom {
     all: unset;
     display: flex;
@@ -211,28 +215,25 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 450px) { 
-  .Tasteology {
-    overflow: hidden;
-  }
-  .BlockImage-Text, .bottomComp.BlockImage-Text {
-    padding: 2rem 10px;
+  .BlockImage-Text, 
+  .bottomComp.BlockImage-Text {
+    flex-direction: column;
+    gap: 30px;
+    padding: calc(120px / 4) 0;
     max-width: 280px;
-  }
-  .Images {
-    max-width: 280px;
-    overflow: hidden;
-    align-items: center;
-  }
-  .Card,
-  .Card-image {
-    overflow: hidden;
-    width: 280px;
     margin: 0 auto;
-    text-align: center;
+  }
+  .Images, .Left, .Right, .Right-Top, .Right-Bottom {
+    all: unset;
     display: flex;
-    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
     align-items: center;
   }
+  .Card {
+    width: 280px;
+  }
+
   .Heading {
     font-size: 26px;
   }

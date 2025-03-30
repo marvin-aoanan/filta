@@ -17,9 +17,9 @@ export default async function PhotoModal({
         className="w-full object-cover aspect-square"
       />
 
-      <div className="bg-white p-4">
+      <div className="bg-white text-gray-900 p-4">
         <h2 className="text-xl font-semibold">{photo.name}</h2>
-        <h3>{photo.desc}</h3>
+        <h3 className="text-gray-900">{photo.desc}</h3>
       </div>
     </Modal>
   );

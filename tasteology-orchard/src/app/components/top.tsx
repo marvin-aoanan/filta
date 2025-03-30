@@ -4,13 +4,12 @@ import Image from "next/image";
 import { handleClick } from "./actions/handle-click";
 import Link from "next/link";
 
-
 export default function TopComponent() {
   return (
     <div className="topComp BlockImage-Text">
       <div className="Images">
         <div className="Left">
-        <Link href={`/cooking`} id="cooking" onClick={handleClick}>
+        <Link href="/cooking" id="cooking" onClick={handleClick}>
           <Image
             id="left-image"
             data-name="Cooking"
@@ -24,7 +23,7 @@ export default function TopComponent() {
         </div>
         <div className="Right">
           <div className="Right-Top">
-            <Link href={`/recipe`} id="recipe" onClick={handleClick}>
+            <Link href="/recipe" id="recipe" onClick={handleClick}>
               <Image
                 id="righ-top-image"
                 data-name="Recipe"
@@ -37,7 +36,7 @@ export default function TopComponent() {
             </Link>
           </div>
           <div className="Right-Bottom">
-            <Link href={`/eggs`} id="eggs" onClick={handleClick}>
+            <Link href="/eggs" id="eggs" onClick={handleClick}>
               <Image
                 id="right-bottom-image"
                 data-name="Tray of eggs"
