@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Filta - Tasteology Orchard',
     description: 'Tasteology Orchard, taste the colors.',
+    images: '/red-food.png',
+    url: 'https://example.com',
+    type: 'website',
+    siteName: 'Filta - Tasteology Orchard',
   },
   
 };
