@@ -30,6 +30,10 @@ p {
   padding: 0;
 }
 
+a:hover {
+  color: #f0b203;
+}
+
 .font-bold {
   font-weight: 700;
 }

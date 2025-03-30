@@ -9,7 +9,7 @@ export default function BottomComponent() {
   return (
     <div className="bottomComp BlockImage-Text">
       <div className="Headline">
-        <h2 className="Heading">Taste the Colours</h2>
+        <h2 className="Heading"><Link href="/" id="taste-the-colours" onClick={handleClick}>Taste the Colours</Link></h2>
       </div>
       
       <div className="Card-list">
@@ -27,7 +27,7 @@ export default function BottomComponent() {
           </Link>
           </div>
           <div className="Card-text">
-            <h3>Red</h3>
+            <h3><Link href="/" id="red-food" onClick={handleClick}>Red</Link></h3>
             <p>Red foods remind us of berries and soft fruits, so we anticipate a sweet taste.</p>
           </div>
         </Card>
@@ -45,7 +45,7 @@ export default function BottomComponent() {
           </Link>
           </div>
           <div className="Card-text">
-            <h3>Green</h3>
+            <h3><Link href="/" id="green-food" onClick={handleClick}>Green</Link></h3>
             <p>Fresh, zingy green colours are reminiscent of unripe fruit, promising sour or acid flavours.</p>
           </div>
         </Card>
@@ -63,7 +63,7 @@ export default function BottomComponent() {
           </Link>
           </div>
           <div className="Card-text">
-            <h3>White</h3>
+            <h3><Link href="/" id="white-food" onClick={handleClick}>White</Link></h3>
             <p>White foods evoke memories of salt and salty flavours, driving the expectation of a savoury treat.</p>
           </div>
         </Card>

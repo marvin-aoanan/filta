@@ -52,10 +52,12 @@ export default function TopComponent() {
       </div>
       <div className="Content">
         <div className="Headline">
-          <h1 className="Heading">What Does Cooking Mean?</h1>
+          <h1 className="Heading">
+            <Link href="/" id="what-does-cooking-mean" onClick={handleClick}>What Does Cooking Mean?</Link>
+          </h1>
         </div>
         <p>Is it simply applying heat to a food product? A way of making certain food safe to eat? Or a way to create flavour and make food more appealing? This is just part of what Hervé This, the father of molecular gastronomy, has dedicated his life to finding out. We spoke to him to find out what his experiments have told him. And in the process even discovered the secret to cooking the perfect egg...</p>
-        <h4 className="text-red">THE PERFECT EGG</h4>
+        <h4 className="text-red"><Link href="/" id="prefect-egg" onClick={handleClick}>THE PERFECT EGG</Link></h4>
         <p className="font-bold">Keep water between 67 and 68°C for a flavourful, tender yolk</p>
       </div>
     </div>
