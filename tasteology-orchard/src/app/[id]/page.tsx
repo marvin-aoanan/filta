@@ -9,8 +9,8 @@ export default async function PhotoPage({
   const { id } = await params;
   const photo: PhotoImage = photoImages.find((p) => p.id === id)!;
   return (
-    <div className="container mx-auto my-10">
-      <div className="w-1/2 mx-auto">
+    <div className="non-Modal-container mx-auto my-10">
+      <div className="mx-auto">
         <div>
           <h1 className="text-center text-3xl font-bold my-4">{photo.name}</h1>
         </div>

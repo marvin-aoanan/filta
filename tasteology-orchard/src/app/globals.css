@@ -165,6 +165,16 @@ p {
   font-weight: 700;
 }
 
+.Modal-container {
+  width: 90%;
+  max-width: 500px;
+}
+
+.non-Modal-container {
+  width: 90%;
+  max-width: 500px;
+}
+
 /* Responsive */
 @media (min-width: 1025px) and (max-width: 1150px) {
   .topComp.BlockImage-Text {
@@ -192,6 +202,7 @@ p {
   .bottomComp.BlockImage-Text {
     flex-direction: column;
     max-width: 100%;
+    padding: calc(120px / 2) 3rem;
   }
 }
 
@@ -200,17 +211,19 @@ p {
   .bottomComp.BlockImage-Text {
     flex-direction: column;
     gap: 30px;
-    padding: calc(120px / 2) 0;
+    padding: calc(120px / 3) 0;
     max-width: 400px;
     margin: 0 auto;
   }
-
   .Images, .Left, .Right, .Right-Top, .Right-Bottom {
     all: unset;
     display: flex;
     gap: 1rem;
     flex-direction: column;
     align-items: center;
+  }
+  .Modal-container {
+    width: 70%;
   }
 }
 
@@ -233,8 +246,10 @@ p {
   .Card {
     width: 280px;
   }
-
   .Heading {
     font-size: 26px;
+  }
+  .Modal-container {
+    width: 90%;
   }
 }
