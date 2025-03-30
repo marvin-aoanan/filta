@@ -9,7 +9,9 @@ export default function BottomComponent() {
   return (
     <div className="bottomComp BlockImage-Text">
       <div className="Headline">
-        <h2 className="Heading"><Link href="/" id="taste-the-colours" onClick={handleClick}>Taste the Colours</Link></h2>
+        <h2 className="Heading">
+          <Link href="/" id="taste-the-colours" onClick={handleClick}>Taste the Colours</Link>
+        </h2>
       </div>
       
       <div className="Card-list">
